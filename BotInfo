@@ -1,0 +1,262 @@
+{
+  "name": "botinfo",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "BKHCR",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "22",
+      "storage": "1",
+      "varName2": "executor",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "iftrue": "2",
+      "iftrueVal": "10",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Permissions"
+    },
+    {
+      "title": "",
+      "author": "${tempVars(\"executor\")} you don't have permission to execute this command!",
+      "color": "00ff00",
+      "url": "",
+      "authorIcon": "${msg.author.displayAvatarURL}",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "nopermembed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "nopermembed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "1",
+      "varName3": "delnopermembed",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "10",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "delnopermembed",
+      "name": "Delete Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "PERM CHECK ABOVE",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "22",
+      "storage": "1",
+      "varName2": "executor",
+      "name": "Store Member Info"
+    },
+    {
+      "info": "5",
+      "storage": "1",
+      "varName2": "ram_ping",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "27",
+      "storage": "1",
+      "varName2": "ram_usage",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "12",
+      "storage": "1",
+      "varName2": "ram_previous_pings",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "17",
+      "storage": "1",
+      "varName2": "list_of_servers",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "23",
+      "storage": "1",
+      "varName2": "Uptime D",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "24",
+      "storage": "1",
+      "varName2": "Uptime H",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "25",
+      "storage": "1",
+      "varName2": "Uptime M",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "26",
+      "storage": "1",
+      "varName2": "Uptime S",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "title": "Bot Information",
+      "author": "",
+      "color": "GREEN",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "CEM Uptime",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "CEM Uptime",
+      "message": "**UPTIME:** ${tempVars(\"Uptime D\")} Days ${tempVars(\"Uptime H\")} Hours ${tempVars(\"Uptime M\")} Minutes ${tempVars(\"Uptime S\")} Seconds\n\n**RAM USAGE:** ${tempVars(\"ram_usage\")}Mb\n**CURRENT PING:** ${tempVars(\"ram_ping\")}ms\n\n**CURRENT SERVERS IM ON:** ${tempVars(\"list_of_servers\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "CEM Uptime",
+      "message": "Bot Information | ${tempVars(\"executor\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "CEM Uptime",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "comment": "SPEED CHECK ABOVE",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "**Checking Speed Info**\n**please wait...**",
+      "storage": "1",
+      "varName2": "tru1",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "info": "downloadspeed",
+      "type": "0",
+      "storage": "1",
+      "varName": "speed",
+      "name": "Speed Test"
+    },
+    {
+      "info": "uploadspeed",
+      "type": "0",
+      "storage": "1",
+      "varName": "uspeed",
+      "name": "Speed Test"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "0395ff",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embo",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embo",
+      "message": "\n**BOT SPEED INFORMATION **\n**┌───────────────────────────────────**\n**├ 🔼 Upload:** ${tempVars(\"uspeed\")} MB/s\n**├ 🔽 Download:** ${tempVars(\"speed\")} MB/s\n**└───────────────────────────────────**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "tru1",
+      "name": "Delete Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embo",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "1",
+      "varName3": "embod",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
